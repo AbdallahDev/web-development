@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Not responsive demo</title>
+    <title>Local Not responsive demo</title>
     <style>
         html {
             font-family: sans-serif;
@@ -19,7 +19,7 @@
         }
 
         header {
-            background: url(header2.jpg) no-repeat center;
+            background: url(header4.jpg) no-repeat center;
             height: 200px;
         }
 
@@ -54,14 +54,21 @@
                 viverra vehicula neque. Nullam auctor turpis non leo iaculis finibus. Quisque blandit arcu venenatis
                 libero tempor, ac pulvinar ligula dapibus.</p>
 
-            <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+            <!-- <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva"> -->
+            <picture>
+                <source media="(max-width: 799px)" srcset="paradise-480w.jpg">
+                <source media="(min-width: 800px)" srcset="paradise-800w.jpg">
+                <img src="paradise-800w.jpg" alt="paradise beach image">
+            </picture>
 
             <p>Suspendisse potenti. Ut in luctus eros. Mauris pulvinar vehicula aliquet. Etiam imperdiet eleifend
                 luctus. Duis ut justo nec eros ornare consectetur. Vestibulum convallis condimentum varius. Maecenas
                 rutrum porta varius. Phasellus volutpat sem id sagittis luctus. Morbi vitae quam vitae nisi iaculis
                 dignissim.</p>
 
-            <img src="elva-fairy-800w.jpg" alt="Elva dressed as a fairy">
+            <!-- <img src="elva-fairy-800w.jpg" alt="Elva dressed as a fairy"> -->
+            <img src="paradise-800w.jpg" alt="paradise beach image"
+                srcset="paradise-480w.jpg 480w, paradise-800w.jpg 800w" sizes="(max-width: 600px) 480px, 800px">
 
             <p>Header image originally by <a href="https://www.flickr.com/photos/miwok/17086751527/">Miwok</a>.</p>
         </section>
